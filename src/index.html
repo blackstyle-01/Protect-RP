@@ -1,133 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  
 <head>
-    <meta charset="UTF-8">
+    <!-- https://github.com/thespectrenet/SpectreSite-PrivateSource -->
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/now-ui-kit.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
-    <title>Protect RP</title>
-    <link rel="shortcut icon" type="image/jpg" href="assets/ProtectNoBg.png"/>
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-transparent">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
-    </button>
-    <img src="assets/ProtectNoBg.png" width="50" height="50">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#/">Accueil<span class="sr-only">(actuel)</span></a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Fonctionnalités</a>
-            </li> -->
-            <li class="nav-item">
-                <a class="nav-link" href="https://doc.protectrp.fr/">Documentation</a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">Dashboard</a>
-            </li> -->
-            <li class="nav-item">
-                <a class="nav-link" href="policy.html">Politique</a>
-            </li>
+    <link rel="canonical" href="index.html">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.pure.min.css">
+    <link rel="preload"  href="../use.typekit.net/ctd2xyc.css" as="style" onload="this.rel='stylesheet'">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" SameSite="Strict" href="asset/fav/ProtectNoBg.png">
+    <link rel="icon" type="image/png" sizes="32x32" SameSite="Strict" href="asset/fav/ProtectNoBg.png">
+    <link rel="icon" type="image/png" sizes="16x16" SameSite="Strict" href="asset/fav/ProtectNoBg.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="SPECTRE | The ULTIMATE Discord Toolset"/>
+    <meta property="og:description" content="Build the most incredible Discord server with advanced moderation, user reports, next level logging & more, all with the ULTIMATE Discord toolset already active in 1660+ servers!"/>
+    <meta property="og:image" content="asset/fav/ProtectNoBg.png"/>
+    <meta property="og:site_name" content="Spectre Bot"/>
+    <meta name="og:url" content="index.html">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:image" content="asset/image/ogimage.webp" />
+    <meta property="twitter:site" content="Protect RP" />
+    <meta name="theme-color" content="#007bff">
+
+    <title>ProtectRP | Accueil</title>
+    <meta name="description" content="Build the most incredible Discord server with advanced moderation, user reports, next level logging & more, all with the ULTIMATE Discord toolset already active in 1660+ servers!">
+    <meta name="keywords" content="Discord, Discord Bot, Spectre Bot, Spectre, Bot, top.gg, discords, commands, technology">
+    <meta name="author" content="Maël">
+  </head>
+  <body>
+    <!-- Pushdown Alert -->
+    <div class="alert alert-primary alert-dismissible fade show align-items-center">
+      <button type="button" class="close" onclick="closeAlert()">&times;</button>
+      <a class="white-link" href="https://ko-fi.com/protectrp" target="_blank">ProtectRP a besoin de vos dons pour continuer à s'améliorer, cliquez ici pour nous soutenir !</a>
+    </div>
+    <div class="justify-content-center d-none d-sm-none d-md-block d-lg-block d-xl-block noSidePadding">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-nav justify-content-center d-none d-sm-none d-md-block d-lg-block d-xl-block nav-padding">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="asset/id/ProtectNoBg.png" alt="ProtectRP" width="55px" height="55px"/>
+        </a>
+        <ul class="navbar-nav d-flex justify-content-end logo-nav">
+          <li class="nav-item br">
+              <a class="nav-link br" href="index.html">ACCUEIL</a>
+          </li>
+          <li class="nav-item br">
+              <a class="nav-link br" href="commands.html">COMMANDES</a>
+          </li>
+        </li>
+        <li class="nav-item br">
+            <a class="nav-link br" href="privacy.html">POLITQUE</a>
+        </li>
+          <li class="nav-item br">
+              <a class="nav-link br" href="https://discord.gg/peXghqAhnb">SUPOPRT</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link nav-btn btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=959827203267379251&permissions=2113268823&scope=bot%20applications.commands">INVITER</a>
+          </li>
         </ul>
-        <!-- <div class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Documentation
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Commands</a>
-                <a class="dropdown-item" href="#">Tutorials</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Server settings</a>
-            </div>
-        </div> -->
-        <!-- <div class="nav-item">
-            <a class="nav-link" href="#">À propos</a>
-        </div> -->
-        <!-- <button class="btn login-btn btn-outline-accent my-2 my-sm-0" style="font-size: 10px !important;font-family: poppins !important;">LOGIN</button> -->
-    </div>
-</nav>
-<div class="heading">
-    <h1 class="display-5 title">Votre serveur RP, notre spécialité.</h1>
-    <p class="subtitle">Le bot Protect RP est un bot spécialisé pour les serveurs de Role Play FiveM.<br />Il comporte de multiples fonctionalités afin de faciliter la gestion de votre serveur RP et plus!</p>
-    <a class="btn btn-primary btn-lg" href="https://doc.protectrp.fr/" target="_blank" role="button">Documentation</a>
-    <a class="btn btn-secondary btn-lg" href="https://discord.com/oauth2/authorize?client_id=959827203267379251&permissions=2113268823&scope=bot%20applications.commands" target="_blank" role="button">Inviter sur votre serveur</a>
-    <br /><br /><br /><br /><br /><br />
+      </nav>
 </div>
-<div class="features">
-    <div class="title">Fonctionnalités</div>
-    <div class="subtitle">Les plus populaires!</div>
-    <div class="cards">
-        <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Sécurité</h5>
-            <p class="card-text"><br />Le bot Protect RP possède un système de validation par Captcha sophistiqué et simple d'utilisation permettant de prévenir les RAID de votre serveur.</p>
-        </div>
-    </div>
-    <div class="card" style="width: 18rem;">
-        <div class="card-body">
-            <h5 class="card-title">Salons automatisés</h5>
-            <p class="card-text"><br />Vocaux automatisés pour les douanes, les attentes de support ainsi que des canaux HRP pour vos membres et staffs.</p>
-        </div>
-    </div>
-        <div class="card" style="width: 18rem;">
-            <div class="card-body">
-                <h5 class="card-title">Douanes</h5>
-                <p class="card-text"><br />Un système de douane complet permettant d'octroyer la permissions aux douaniers d'attribuer un rôle sans devoir leur donner accès à la gestion des rôles.</p>
-            </div>
-        </div>
-    </div>
 </div>
-<div class="statistics">
-    <div class="cards">
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">120 +</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">serveurs</p>
-            </div>
+<div class="noSidePadding d-block d-sm-block d-md-none d-lg-none d-xl-none">
+    <nav class="navbar navbar-expand-sm bg-nav navbar-light nav-padding">
+          <a class="navbar-brand" href="index.html">
+              <img src="asset/id/ProtectNoBg.png" alt="ProtectRP" width="55px" height="55px"/>
+          </a>
+                <button class="navbar-toggle" type="button" onclick="openNav()">
+                  &#9776;
+                </button>
+                <script>
+                  function openNav() {
+                    document.getElementById("myNav").style.width = "100%";
+                  }
+                  
+                  function closeNav() {
+                    document.getElementById("myNav").style.width = "0%";
+                  }
+                  </script>
+        <div id="myNav" class="overlay">
+          <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content">
+            <a href="index.html">ACCUEIL</a>
+            <a href="commands.html">COMMANDES</a>
+            <a href="privacy.html">POLITIQUE</a>
+            <a href="https://discord.gg/ujHnUXeAcf">SUPPORT</a>
+            <a class="btn-nav btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=959827203267379251&permissions=2113268823&scope=bot%20applications.commands">INVITER</a>
+          </div>
         </div>
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">3000 +</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">utilisateurs uniques</p>
-            </div>
+          </nav>
+        </div> 
+            <main>
+                <div class="container-fluid header">
+                    <div class="container header-inner">
+                        <div class="row align-items-center justify-content-center">
+                          <div class="card-deck header-deck">
+                            <div class="card header-image header-card d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                              <div class="card-body text-center">
+                                <img class="imagepfp" width="100%" height="100%" src="asset/id/ProtectNoBg.png" alt="Large profile picture">
+                              </div>
+                            </div>
+                            <div class="card header-text header-card">
+                              <div class="container-fluid block-container">
+                                <div class="row">
+                                  <div class="card-body text-center d-flex">
+                                    <h1 class="header-callout">Votre serveur RP, notre spécialité.</h1><br>
+                                </div>
+                                <div class="break"></div> <!-- Flex line break -->
+                                  <div class="row justify-content-end align-items-right">
+                                    <div class="card-body text-left d-flex header-buttons">
+                                      <div class="front-page-buttons justify-content-end">
+                                        <a href="https://discord.com/oauth2/authorize?client_id=959827203267379251&permissions=2113268823&scope=bot%20applications.commands" class="header-btn btn btn-primary">INVITER SUR VOTRE SERVEUR</a>
+                                        <a href="https://discord.gg/peXghqAhnb" class="header-btn btn btn-primary">SERVEUR DISCORD</a>
+                                        <a href="commands.html" class="header-btn btn btn-primary">COMMANDES</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                  <div class="container info-container">
+                    <div class="container">
+                      <div class="row info-row">
+                        <div class="card-deck servers-cards align-items-center">
+                        <div class="card info-text info-card">
+                          <div class="card-body d-flex">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="card-body text-center d-flex">
+                                  <h2 class="block-callout">Sécurité</h2><br>
+                                </div>
+                                <div class="break"></div> <!-- Flex line break -->
+                                  <div class="row justify-content-end align-items-right">
+                                    <div class="card-body text-left d-flex">
+                                      <p class="block-caption">Le bot Protect RP possède un système de validation par Captcha sophistiqué et simple d'utilisation permettant de prévenir les RAID de votre serveur.
+                                      </p><br>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card info-image info-card">
+                            <div class="card-body place-right text-small-center justify-content-start">
+                              <img class="imagepfp ir-left" max-width="95%" src="asset/image/captcha.webp" alt="Invite Spectre Bot">
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                      <div class="row info-row">
+                        <div class="card-deck servers-cards align-items-center">
+                        <div class="card info-image info-card">
+                          <div class="card-body place-left text-small-center justify-content-start">
+                            <img class="imagepfp ir-left" max-width="95%" src="asset/image/ticket.webp" alt="Moderation logging examples">
+                          </div>
+                        </div>
+                        <div class="card info-text info-card">
+                          <div class="card-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="card-body text-center d-flex">
+                                  <h2 class="block-callout">Système De Ticket</h2><br>
+                                </div>
+                                <div class="break"></div> <!-- Flex line break -->
+                                  <div class="row justify-content-end align-items-right">
+                                    <div class="card-body text-right d-flex">
+                                      <p class="block-caption">Système de ticket approfondi pour permettre d'ajouter une description et un sujet a votre ticket
+                                      </p><br>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container">
+                    <div style="text-align: center;" class="d-none d-md-block">
+                      <div class="row info-row">
+                        <div class="card-deck servers-cards align-items-center">
+                        <div class="card info-text info-card">
+                          <div class="card-body d-flex">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="card-body text-center d-flex">
+                                  <h2 class="block-callout">Suggestions</h2><br>
+                                </div>
+                                <div class="break"></div> <!-- Flex line break -->
+                                  <div class="row justify-content-end align-items-right">
+                                    <div class="card-body text-left d-flex">
+                                      <p class="block-caption">système de suggestion pour proposez votre idées au serveur discord
+                                      </p><br>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card info-image info-card">
+                            <div class="card-body place-right text-small-center justify-content-start">
+                              <img class="imagepfp ir-left" max-width="95%" src="asset/image/suggestion.webp" alt="Report example">
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="container bottom-row">
+                      <div class="row info-row">
+                        <div class="card-deck servers-cards align-items-center">
+                        <div class="card info-image info-card">
+                          <div class="card-body place-left text-small-center justify-content-start">
+                            <img class="imagepfp ir-left place-left" max-width="95%" src="asset/image/support.webp" alt="Support images">
+                          </div>
+                        </div>
+                        <div class="card info-text info-card">
+                          <div class="card-body">
+                            <div class="container-fluid">
+                              <div class="row">
+                                <div class="card-body text-center d-flex">
+                                  <h2 class="block-callout">Support</h2><br>
+                                </div>
+                                <div class="break"></div> <!-- Flex line break -->
+                                  <div class="row justify-content-end align-items-right">
+                                    <div class="card-body text-right d-flex">
+                                      <p class="block-caption"><p class="block-caption">Vous rencontrez des problèmes avec ProtectRP ? Notre serveur Discord est à votre disposition tous les jours de la semaine pour vous aider à résoudre vos problèmes en un rien de temps ! (Avec des temps d'attente légèrement plus longs, vous pouvez également envoyer un message à ProtectRP
+
+                                      </p><br>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="justify-content-center text-center cta-btns">
+                      <div class="justify-content-center text-center">
+                        <h3 class="review-callout text-center">Laisser un avis pour Protect RP</h3>
+                        <a class="btn btn-sm-block cta-btn btn-primary" href="https://top.gg/fr/bot/959827203267379251">Laisser un commentaire</a>--><a href="https://top.gg/bot/959827203267379251">
+                          <img src="https://top.gg/api/widget/959827203267379251.svg">
+                        </a>
+                      </div>
+                    </div>
+                  <div class="container fous-margins">
+                    <div class="row servers-row">
+                      <div class="container">
+                        <h3 class="text-center privacy-heading">Nos Partenaire</h3>
+                        <div class="card-deck servers-cards">
+                          <div class="card server-card bg-primary text-white">
+                            <div class="card-body server-info-card-block">
+                              <div class="container-fluid server-info-interior-container d-flex flex-row">
+                                <div class="server-icon">
+                                  <img class="server-icon" width="100%" src="asset/servericon/SpectreBot.png" alt="Spectre server logo">
+                                </div>
+                                <div class="server-title text-center d-flex fi-2 justify-content-center align-items-center">
+                                  <h4 class="server-title-text card-text">Protect RP</h4>
+                                </div>
+                              </div>
+                              <div class="server-infotext">
+                                <p class="card-text">La maison officielle de ProtectRP, l'ensemble d'outils Discord ULTIME ! Obtenez de l'aide, rencontrez d'autres utilisateurs et plus encore !</p>
+                                <a href="https://discord.gg/peXghqAhnb" class="invite-btn btn btn-outline-light">Rejoindre le serveur</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card server-card bg-primary text-white">
+                            <div class="card-body server-info-card-block">
+                              <div class="container-fluid server-info-interior-container d-flex flex-row">
+                                <div class="server-icon">
+                                  <img class="server-icon" width="100%" src="asset/servericon/Logo_Ciel_2.gif" alt="Hartserver server logo">
+                                </div>
+                                <div class="server-title text-center d-flex fi-2 justify-content-center align-items-center">
+                                  <h4 class="server-title-text card-text">NewComeBack</h4>
+                                </div>
+                              </div>
+                              <div class="server-infotext">
+                                <p class="card-text">NewComeBack est un serveur RolePlay qui utilise notre bot. Nous sommes partenaire avec eux</p>
+                                <a href="https://discord.gg/AnMjbRZHxS" class="invite-btn btn btn-outline-light">Rejoindre le serveur</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card server-card bg-primary text-white">
+                            <div class="card-body server-info-card-block">
+                              <div class="container-fluid server-info-interior-container d-flex flex-row">
+                                <div class="server-icon">
+                                  <img class="server-icon" width="100%" src="asset/image/partenaire.gif" alt="Discord blank logo">
+                                </div>
+                                <div class="server-title text-center d-flex fi-2 justify-content-center align-items-center">
+                                  <h4 class="server-title-text card-text">être partenaire?</h4>
+                                </div>
+                              </div>
+                              <div class="server-infotext">
+                                <p class="card-text">Vous avez juste a rejoindre le discord support et faire une demande de partenariat</p>
+                                <a href="https://discord.gg/peXghqAhnb" class="invite-btn btn btn-outline-light">Rejoindre le</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card server-card bg-primary text-white">
+                            <div class="card-body server-info-card-block">
+                              <div class="container-fluid server-info-interior-container d-flex flex-row">
+                                <div class="server-icon">
+                                  <img class="server-icon" width="100%" src="asset/servericon/standard_2.gif" alt="Hartserver server logo">
+                                </div>
+                                <div class="server-title text-center d-flex fi-2 justify-content-center align-items-center">
+                                  <h4 class="server-title-text card-text">SLY DEV</h4>
+                                </div>
+                              </div>
+                              <div class="server-infotext">
+                                <p class="card-text">SLY DEV et un serveur basez sur le développement et entraide</p>
+                                <a href="https://discord.gg/4y4rkehKRN" class="invite-btn btn btn-outline-light">Rejoindre le serveur</a>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </main>
+    <footer class="container-fluid py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md">
+            <a href="index.html"><img class="footer-logo" src="asset/id/ProtectNoBg.png" alt="footer logo" width="75px" height="75px"> </a>
+          <a href="https://mjdws.com/" target="_blank"><small class="d-block mt-3 mb-3 link-light">© 2022 Protect RP |<wbr> By Maël#2299</small></a>
         </div>
-        <div class="card statistic" style="width: 18rem;">
-            <div class="card-body">
-                <p class="card-title" style="font-size: 50px !important;line-height: 15px !important;letter-spacing: -0.06em !important;font-weight: bold !important;">7000 +</h1>
-                <p style="font-weight: bold !important;font-size: 20px !important;">salons</p>
-            </div>
+        <div class="col-12 col-md first-footer-group">
+          <h5>Liens Utile</h5>
+          <ul class="list-unstyled text-small">
+          <li class="footer-link-item"><a SameSite="Strict" class="footer-link" href="commands.html">Commands</a></li>
+          <li class="footer-link-item"><a SameSite="Strict" class="footer-link" target="_blank" href="https://top.gg/fr/bot/959827203267379251">Vote</a></li>
+          <li class="footer-link-item"><a SameSite="Strict" class="footer-link" target="_blank" href="https://ko-fi.com/protectrp">Donate</a></li>
+          </ul>
         </div>
+        <div class="col-12 col-md">
+          <h5>Support</h5>
+          <ul class="list-unstyled text-small">
+            <li class="footer-link-item"><a class="footer-link" href="https://discord.gg/peXghqAhnb">Discord</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="mailto:protectrp.fr@gmail.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h5>Privacy</h5>
+          <ul class="list-unstyled text-small">
+            <li class="footer-link-item"><a class="footer-link" href="privacy.html">Privacy Policy</a></li>
+            <li class="footer-link-item"><a class="footer-link" href="mailto:privacy@spectrebot.net">Privacy Concerns</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md">
+          <h5>Autre</h5>
+          <ul class="list-unstyled text-small">
+            <li class="footer-link-item"><a SameSite="Strict" class="footer-link" target="_blank" href="https://status.spectrebot.net/">Status</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-</div>
-<div class="page_end">
-    <div class="start">
-        <div class="card">
-            <div class="card-body gs-card">
-                <div class="title">Vous voulez voir le bot en action?</div>
-                <div class="subtitle">Rejoignez le serveur Discord du créateur du bot Protect RP!</div>
-                <br />
-                <a class="btn btn-primary btn-lg" href="https://discord.gg/PwX2C3fBkA" role="button">Discord</a>
-            </div><br />
-        </div>
-    </div>
-    <div class="footer">
-        <div class="bot-footer">
-            <img src="assets/ProtectNoBg.png" width="150"><br />
-            Copyright © ZeMaxx_#0001 - 2022
-        </div><br/>
-        <div class="nouridio">Gracieuseté de<a href="https://github.com/Nouridio/Discord-bot-website-template"> nouridio</a></div>
-    </di
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/now-ui-kit.min.js"></script>
-</body>
-</html>
+</footer>    <!-- JS -->
+    <script type="text/javascript" src="script.js"></script>
+
+  </body>
